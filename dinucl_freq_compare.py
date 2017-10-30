@@ -1,8 +1,6 @@
 #!/usr/bin/env python3
-import re
-protein_file = 'Saccharomyces_cerevisiae.peps.fa'
 
-# Your solution should print out the aggregate frequency of each amino acid across all the sequences in the file
+import re
 
 # here is function to read fasta file and return array of sequences as strings
 # use it like
@@ -28,11 +26,19 @@ def read_fasta (file):
     return seqs
 
 
+# This should read two (or more if you want the challenge) FASTA files
+# Calculate Di-Nucleotide frequencies for all sequences in each file
+# print out a report to compare frequencies between genomes
+
+genome1 = "Ecoli_K-12.fasta"
+genome2 = "B_subtilis_str_168.fasta"
+
 # add your code for reading in the file
-# processing the sequence to get the amino acid counts and overall
-# percentage
+# processing the sequence to get the dinucleotide percentages
+# you may want to write your own function to extract this from the
+# sequences or sequence files
 
-Header = ["Amino Acid","Proteome Percentage"]
+
+# you may want to change array to be dynamic if you read in files from cmdline
+Header=["Motif","Ecoli_K-12","B_subtilis_str_168"]
 print("\t".join(Header))
-
-# your code for the report
