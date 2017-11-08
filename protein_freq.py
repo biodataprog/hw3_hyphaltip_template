@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import re
-protein_file = 'Saccharomyces_cerevisiae.peps.fa'
+protein_file = 'Saccharomyces_cerevisiae.pep'
 
 # Your solution should print out the aggregate frequency of each amino acid across all the sequences in the file
 
