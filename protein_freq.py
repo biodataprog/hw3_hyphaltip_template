@@ -31,6 +31,7 @@ def read_fasta (file):
 # add your code for reading in the file
 # processing the sequence to get the amino acid counts and overall
 # percentage
+sequences = read_fasta(protein_file)
 
 Header = ["Amino Acid","Proteome Percentage"]
 print("\t".join(Header))
